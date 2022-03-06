@@ -1,4 +1,4 @@
-Find the missing number in the given sequence. the sequence will be unsorted, but when it sorted, it will follow a (n+1) pattern.
+Find the missing number in the given sequence. The sequence will be unsorted, but when it sorted, it will follow a (n+1) pattern.
 
 validations:
 
