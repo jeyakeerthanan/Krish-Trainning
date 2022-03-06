@@ -12,12 +12,12 @@ public class MissingNumber {
         this.number_sequence = number_sequence;
     }
 
-    public void missingValue(int[] array){
+    public int missingValue(int[] array){
 
        boolean first= true;
        int index = array.length-1;
        int count=0;
-        int missing_number = 0;
+        int  missing_number = 0;
 
       for(int k=0; k< index; k++){
 
@@ -51,6 +51,8 @@ public class MissingNumber {
           System.out.println("If it is a  last  number :" + (array[index] + 1));
       }
 
+
+      return missing_number;
 
   }
 
@@ -90,7 +92,7 @@ public class MissingNumber {
       return array;
   }
 
-    public static void validateSameValue(int[] array){
+    public static int validateSameValue(int[] array){
 
 
         int index = array.length-1;
@@ -102,12 +104,14 @@ public class MissingNumber {
 
 
 
-            for(int k=i+1; k< index; k++){
+            for(int k=1; k <= index; k++){
 
                 if (array[i] == array[k]){
                     System.out.println(" Two numbers in the sequence cannot be same!!!!");
                     System.out.println(" Please re-run the program!!!!");
                     System.exit(0);
+                    return 0;
+
 
 
                 }
@@ -116,7 +120,7 @@ public class MissingNumber {
         }
 
 
-
+            return 1;
 
 
     }
